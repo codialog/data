@@ -1,0 +1,10 @@
+services:
+
+
+  postgres-sf:
+    container_name: sf-postgres
+    image: postgres:11.4-alpine
+    volumes:
+      - $POSTGRES_PATH:/var/lib/postgresql/data
+    ports:
+      - $DB_PORT_HOST:5432

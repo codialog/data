@@ -1,0 +1,92 @@
+create table person
+(
+    id         bigserial not null
+        constraint person_pk
+            primary key,
+    full_name  text,
+    birth_date date,
+    motivation text
+);
+comment on table person is 'Recipients of Nobel prize';
+comment on column person.full_name is 'Full name of the recipient';
+comment on column person.birth_date is 'Birth date of the recipient';
+alter table person
+    owner to postgres;
+
+
+create table prize
+(
+    id           bigserial not null
+        constraint prize_pk
+            primary key,
+    present_year integer,
+    category     text,
+    name         text,
+    share        text,
+    type         text
+);
+comment on table prize is 'Nobel prizes';
+comment on column prize.present_year is 'The year that this noble prize was awarded';
+alter table prize
+    owner to postgres;
+
+
+create table city
+(
+    id         bigserial not null
+        constraint city_pk
+            primary key,
+    name       text,
+    рopulation double precision,
+    latitude   double precision,
+    longitude  double precision
+);
+comment on table city is 'Birth city of the recipient';
+alter table city
+    owner to postgres;
+
+
+create table country
+(
+    id               bigserial not null
+        constraint country_pk
+            primary key,
+    name             text,
+    region           text,
+    population       integer,
+    area             integer,
+    density          double precision,
+    coastline        double precision,
+    migration        double precision,
+    infant_mortality double precision,
+    gpd              integer,
+    literacy         double precision
+);
+comment on column country.area is 'sq. mi.';
+comment on column country.density is 'per sq. mi.';
+comment on column country.coastline is 'coast/area ratio';
+comment on column country.infant_mortality is 'per 1000 births';
+comment on column country.gpd is '$ per capita';
+alter table country
+    owner to postgres;
+
+create table laureate
+(
+    id          bigserial not null
+        constraint laureate_pk
+            primary key
+        constraint laureate_city_id_fk
+            references city
+        constraint laureate_country_id_fk
+            references country
+        constraint laureate_person_id_fk
+            references person
+        constraint laureate_prize_id_fk
+            references prize,
+    person_id   bigint,
+    prize_id    bigint,
+    city_id     bigint,
+    country_id  bigint
+);
+alter table laureate
+    owner to postgres;
