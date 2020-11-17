@@ -1,0 +1,143 @@
+  
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| country                     | string                                             |          |
+| city                        | string                                             |          |
+| accentcity                  | string                                             |          |
+| region                      | string                                             |          |
+| population                  | double                                             |          |
+| latitude                    | double                                             |          |
+| longitude                   | double                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:cities, dbName:v_druzhinin, owner:zeppelin, createTime:1605119777, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:city, type:string, comment:null), FieldSchema(name:accentcity, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:double, comment:null), FieldSchema(name:latitude, type:double, comment:null), FieldSchema(name:longitude, type:double, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/v_druzhinin.db/cities, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=, line.delim=\n, field.delim=}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize=115081794, numRows=0, rawDataSize=0, numFiles=1, transient_lastDdlTime=1605119778, bucketing_version=2, comment=Imported by sqoop on 2020/11/11 18:36:03}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+  
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| alpha_2                     | string                                             |          |
+| name                        | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:capital, dbName:v_druzhinin, owner:hive, createTime:1605208035, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:alpha_2, type:string, comment:null), FieldSchema(name:name, type:string, comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/capital, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605208035, bucketing_version=2, totalSize=2965, EXTERNAL=TRUE, numFiles=1}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| city_alpha_2                | string                                             |          |
+| continent_alpha_2           | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:continent, dbName:v_druzhinin, owner:hive, createTime:1605556060, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:city_alpha_2, type:string, comment:null), FieldSchema(name:continent_alpha_2, type:string, comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/continent, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605556060, bucketing_version=2, EXTERNAL=TRUE}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| country_alpha_2             | string                                             |          |
+| currency_alpha_3            | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:currency, dbName:v_druzhinin, owner:hive, createTime:1605556520, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country_alpha_2, type:string, comment:null), FieldSchema(name:currency_alpha_3, type:string, comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/currency, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605556520, bucketing_version=2, EXTERNAL=TRUE}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| alpha_2                     | string                                             |          |
+| alpha_3                     | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:iso3, dbName:v_druzhinin, owner:hive, createTime:1605556544, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:alpha_2, type:string, comment:null), FieldSchema(name:alpha_3, type:string, comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/iso3, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605556544, bucketing_version=2, EXTERNAL=TRUE}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| alpha_2                     | string                                             |          |
+| country                     | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:names, dbName:v_druzhinin, owner:hive, createTime:1605559879, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:alpha_2, type:string, comment:null), FieldSchema(name:country, type:string, comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/names, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605559879, bucketing_version=2, EXTERNAL=TRUE}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| country_alpha_2             | string                                             |          |
+| code                        | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:phone, dbName:v_druzhinin, owner:hive, createTime:1605559893, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country_alpha_2, type:string, comment:null), FieldSchema(name:code, type:string, comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/phone, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605559893, bucketing_version=2, EXTERNAL=TRUE}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| country                     | string                                             |          |
+| region                      | string                                             |          |
+| population                  | int                                                |          |
+| area                        | int                                                |          |
+| pop_density                 | decimal(5,3)                                       |          |
+| coastline                   | decimal(5,3)                                       |          |
+| net_migration               | decimal(5,3)                                       |          |
+| infant_mortality            | decimal(5,3)                                       |          |
+| gpd                         | int                                                |          |
+| literacy                    | decimal(5,3)                                       |          |
+| phones                      | decimal(5,3)                                       |          |
+| arable                      | decimal(5,3)                                       |          |
+| crops                       | decimal(5,3)                                       |          |
+| other                       | decimal(5,3)                                       |          |
+| climate                     | int                                                |          |
+| birthrate                   | decimal(5,3)                                       |          |
+| deathrate                   | decimal(5,3)                                       |          |
+| agriculture                 | decimal(5,3)                                       |          |
+| industry                    | decimal(5,3)                                       |          |
+| service                     | decimal(5,3)                                       |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:countries_of_the_world, dbName:v_druzhinin, owner:hive, createTime:1605636161, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:int, comment:null), FieldSchema(name:area, type:int, comment:null), FieldSchema(name:pop_density, type:decimal(5,3), comment:null), FieldSchema(name:coastline, type:decimal(5,3), comment:null), FieldSchema(name:net_migration, type:decimal(5,3), comment:null), FieldSchema(name:infant_mortality, type:decimal(5,3), comment:null), FieldSchema(name:gpd, type:int, comment:null), FieldSchema(name:literacy, type:decimal(5,3), comment:null), FieldSchema(name:phones, type:decimal(5,3), comment:null), FieldSchema(name:arable, type:decimal(5,3), comment:null), FieldSchema(name:crops, type:decimal(5,3), comment:null), FieldSchema(name:other, type:decimal(5,3), comment:null), FieldSchema(name:climate, type:int, comment:null), FieldSchema(name:birthrate, type:decimal(5,3), comment:null), FieldSchema(name:deathrate, type:decimal(5,3), comment:null), FieldSchema(name:agriculture, type:decimal(5,3), comment:null), FieldSchema(name:industry, type:decimal(5,3), comment:null), FieldSchema(name:service, type:decimal(5,3), comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/countries_of_the_world, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605636161, bucketing_version=2, totalSize=38303, EXTERNAL=TRUE, numFiles=1}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| year                        | int                                                |          |
+| category                    | string                                             |          |
+| prize                       | string                                             |          |
+| motivation                  | string                                             |          |
+| prize_share                 | string                                             |          |
+| laureate_type               | string                                             |          |
+| full_name                   | string                                             |          |
+| birth_date                  | date                                               |          |
+| birth_city                  | string                                             |          |
+| birth_country               | string                                             |          |
+| sex                         | string                                             |          |
+| organization_name           | string                                             |          |
+| organization_city           | string                                             |          |
+| organization_country        | string                                             |          |
+| death_date                  | date                                               |          |
+| death_city                  | string                                             |          |
+| death_country               | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:nobel_laureates, dbName:v_druzhinin, owner:hive, createTime:1605637800, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:year, type:int, comment:null), FieldSchema(name:category, type:string, comment:null), FieldSchema(name:prize, type:string, comment:null), FieldSchema(name:motivation, type:string, comment:null), FieldSchema(name:prize_share, type:string, comment:null), FieldSchema(name:laureate_type, type:string, comment:null), FieldSchema(name:full_name, type:string, comment:null), FieldSchema(name:birth_date, type:date, comment:null), FieldSchema(name:birth_city, type:string, comment:null), FieldSchema(name:birth_country, type:string, comment:null), FieldSchema(name:sex, type:string, comment:null), FieldSchema(name:organization_name, type:string, comment:null), FieldSchema(name:organization_city, type:string, comment:null), FieldSchema(name:organization_country, type:string, comment:null), FieldSchema(name:death_date, type:date, comment:null), FieldSchema(name:death_city, type:string, comment:null), FieldSchema(name:death_country, type:string, comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/nobel_laureates, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605637800, bucketing_version=2, totalSize=289963, EXTERNAL=TRUE, numFiles=1}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| country_alpha_2             | string                                             |          |
+| city                        | string                                             |          |
+| accent_city                 | string                                             |          |
+| region                      | string                                             |          |
+| population                  | decimal(20,20)                                     |          |
+| latitude                    | decimal(20,20)                                     |          |
+| longitude                   | decimal(20,20)                                     |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:worldcitiespop, dbName:v_druzhinin, owner:hive, createTime:1605638612, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country_alpha_2, type:string, comment:null), FieldSchema(name:city, type:string, comment:null), FieldSchema(name:accent_city, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:decimal(20,20), comment:null), FieldSchema(name:latitude, type:decimal(20,20), comment:null), FieldSchema(name:longitude, type:decimal(20,20), comment:null)], location:hdfs://adh-master:8020/tmp/v_druzhinin/tmp/worldcitiespop, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=,, field.delim=,}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1605638612, bucketing_version=2, totalSize=164325024, EXTERNAL=TRUE, numFiles=1}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
+
